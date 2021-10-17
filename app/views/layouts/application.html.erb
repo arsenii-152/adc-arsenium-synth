@@ -10,8 +10,7 @@
     <%= javascript_pack_tag 'synth', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body data-props="">
-    <%= Oscillator.all.as_json(exclude: [:created_at, :updated_at]) %>
+  <body data-props="<%= Oscillator.all.as_json.to_json %>">
     <%= yield %>
   </body>
 </html>
