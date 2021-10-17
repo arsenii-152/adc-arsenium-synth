@@ -7,10 +7,10 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'synth', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'tone_synth', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body data-props="<%= Oscillator.all.as_json.to_json %>">
+  <body>
     <%= yield %>
   </body>
 </html>

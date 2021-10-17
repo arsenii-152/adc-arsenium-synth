@@ -20,6 +20,7 @@ render () {
         type="range"
         min={min}
         max={max}
+        step={0.01}
         value={value}
         onInput={this.handleChange}
         ref={this.input}
